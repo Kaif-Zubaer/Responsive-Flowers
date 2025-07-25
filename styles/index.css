@@ -34,8 +34,49 @@
     list-style: none;
 }
 
-.navbar ul li a {
+.list-1 a {
+    color: #252432;
+    font-weight: bold;
     text-decoration: none;
+    transition: color 0.2s, opacity 0.2s;
+}
+
+.list-1 a:hover {
+    color: #E95A08;
+}
+
+.list-1 a:active {
+    opacity: 0.5;
+}
+
+.list-2 a {
+    color: #8987A1;
+    text-decoration: none;
+    transition: color 0.2s, opacity 0.2s;
+
+}
+
+.list-2 a:hover {
+    color: #E95A08;
+}
+
+.list-2 a:active {
+    opacity: 0.5;
+}
+
+.list-3 a {
+    color: #8987A1;
+    text-decoration: none;
+    transition: color 0.2s, opacity 0.2s;
+
+}
+
+.list-3 a:hover {
+    color: #E95A08;
+}
+
+.list-3 a:active {
+    opacity: 0.5;
 }
 
 /*navber for mobile*/
@@ -155,6 +196,7 @@
 }
 
 .button {
+    border: 2px solid #E95A08;
     width: 100%;
     background-color: #E95A08;
     color: white;
@@ -162,7 +204,16 @@
     font-size: 16px;
     font-weight: 600;
     padding: 20px 80px;
-    border: none;
+    transition: opacity 0.2s, color 0.2s, background-color 0.2s;
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+.button:active {
+    color: #E95A08;
+    background-color: white;
 }
 
 /*plants section for mobile*/
@@ -458,12 +509,22 @@
 }
 
 .button-1 {
-    border: none;
+    border: 1px solid #E95A08;
     background-color: #E95A08;
     color: white;
     font-size: 16px;
     font-weight: 500;
     padding: 20px 54px;
+    transition: opacity 0.2s, color 0.2s, background-color 0.2s;
+}
+
+.button-1:hover {
+    opacity: 0.7;
+}
+
+.button-1:active {
+    color: #E95A08;
+    background-color: white;
 }
 
 .email-container {
@@ -523,6 +584,15 @@
 .footer-link a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.5);
+    transition: color 0.2s, opacity 0.2s;
+}
+
+.footer-link a:hover {
+    color: #E95A08;
+}
+
+.footer-link a:active {
+    opacity: 0.5;
 }
 
 .footer-social-img {
@@ -551,10 +621,8 @@
     .footer-link {
         font-size: 16px;
         row-gap: 0px;
-    }
-
-    .footer-link a {
-        margin-bottom: 36px;
+        margin-bottom: 20px;
+        gap: 20px;
     }
 
     .footer-social-img {
